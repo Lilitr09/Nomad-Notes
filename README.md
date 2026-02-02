@@ -1,8 +1,8 @@
-#Nomad Notes – Travel Blog Project
-##🌍 Overview
+# Nomad Notes – Travel Blog Project
+## 🌍 Overview
 
-###Nomad Notes is a vintage-style travel blog website that captures the essence of wandering, exploration, and personal storytelling. The project is designed as a digital journal for a fictional traveler named Elara Vance, featuring a nostalgic aesthetic with a fixed sidebar, vintage corners, and a focus on handwritten-style notes.
-##✨ Features
+### Nomad Notes is a vintage-style travel blog website that captures the essence of wandering, exploration, and personal storytelling. The project is designed as a digital journal for a fictional traveler named Elara Vance, featuring a nostalgic aesthetic with a fixed sidebar, vintage corners, and a focus on handwritten-style notes.
+## ✨ Features
 
     Responsive Journal Layout: Fixed sidebar with navigation and logo
 
