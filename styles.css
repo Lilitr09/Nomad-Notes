@@ -68,6 +68,12 @@
   color: var(--ocre-quemado);
   padding-left: 10px;
 }
+.nav-menu a[class="active"] {
+  border-bottom: 1.5px solid var(--azul-pizzara);
+}
+.nav-menu a[class="active"]:hover {
+  border-bottom: 1.5px solid var(--ocre-quemado);
+}
 .sidebar-footer p {
   position: absolute;
   bottom: 0;
@@ -185,7 +191,7 @@ input[type="email"]:focus {
 
 .destination-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 450px));
   gap: 40px 30px;
   margin: 30px 40px;
 }
