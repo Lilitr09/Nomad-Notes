@@ -16,14 +16,18 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <!-- Main Page -->
   <div class="journal-container">
+    <!-- Sidebar -->
     <aside class="sidebar header">
       <div class="sidebar-content">
         <img src="./nomad-notes-logo.png" class="logo" alt="Nomad-Notes logo">
-        <nav class="nav-menu">
-          <a href="./index.html" class="active">Home</a>
-          <a href="./destinations.html">Field Notes</a>
-          <a href="./author.html">The Nomad</a>
+
+        <!-- Nav Menu -->
+        <nav class="nav-menu" id="nav-menu">
+          <li><a href="./index.html" class="current">Home</a></li>
+          <li><a href="#field-notes">Field Notes</a></li>
+          <li><a href="#nomad">The Nomad</a></li>
         </nav>
         <div class="sidebar-footer">
           <p>Est. 2026</p>
@@ -31,27 +35,99 @@
       </div>
     </aside>
     
+    <!-- Content -->
     <main class="content">
+
+      <!-- Hero Section -->
       <section class="hero-section">
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <h1>Every journey starts with a single note.</h1>
-          <label for="email" class="headline-note block">Where do I find you?</label>
-          <input type="email" id="email"><br>
-
-          <button class="call-to-action-btn" type="button">Get on board, wanderer!</button>
+          <h2 class="highlight-headline">Vintage travel journal</h2>
+          <p class="headline-note">Handcrafted journals with aged paper, antique maps, and space for your memories. Start your own legacy today.</p>
+          <button class="call-to-action-btn" type="button">✨ Create your journal</button>
         </div>
-        
-
-        <img class="corner-top-right" src="./vintage-corner.png" width="200" loading="lazy" alt="vintange corner">
-        <img class="corner-top-left" src="./vintage-corner.png" width="200" loading="lazy" alt="vintange corner">
-        <img class="corner-bottom-right" src="./vintage-corner.png" width="200" loading="lazy" alt="vintange corner">
-        <img class="corner-bottom-left" src="./vintage-corner.png" width="200" loading="lazy" alt="vintange corner">
         <img class="compass" src="./compass-icon.png" alt="" width="150" loading="lazy" alt="vintange compass">
       </section>
-    </main>
 
+      <!-- Destinations section -->
+      <h1 class="destination-headline" id="field-notes">Field Notes: Top Destinations</h1>
+      <h2 class="headline-note">Places that left a mark on my map</h2>
+      <section class="destination-grid">
+        <div class="destination-card right">
+          <figure>
+            <img class="destination-img" src="./paris.jpg" alt="" loading="lazy">
+            <figcaption>Lost in the lavender fields of Provence, I found a piece of myself.</figcaption>
+          </figure>
+          <p class="date"><time datetime="2021-07-12">12 July 2021 — Provence, France</time></p>
+        </div>
+
+        <div class="destination-card">
+          <figure>
+            <img class="destination-img" src="./malasia.jpg" alt="" loading="lazy">
+            <figcaption>The floating markets of Bangkok taught me the art of slow travel.</figcaption>
+          </figure>
+          <p class="date"><time datetime="2019-04-12">12 April 2019 — Bangkok, Thailand</time></p>
+        </div>
+
+        <div class="destination-card">
+          <figure>
+            <img class="destination-img" src="./paris.jpg" alt="" loading="lazy">
+            <figcaption>Under the stars of the Sahara, I realized home is wherever I lay my hat.</figcaption>
+          </figure>
+          <p class="date"><time datetime="2000-09-14">14 September 2000 — Sahara Desert, Morocco</time></p>
+        </div>
+      </section>
+
+      <!-- Travel Guide Form -->
+      <section>
+        <div class="travel-guide-form">
+          <h3>📖 Free Field Guide for Wanderers</h3>
+          <p>Get my personal tips: packing light, finding hidden gems, and keeping a vintage journal on the road.</p>
+          <input type="text" placeholder="Your name" aria-label="Your name">
+          <input type="email" placeholder="Your email" aria-label="Your email address">
+          <button class="call-to-action-btn" type="button">✨ Send me the guide</button>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="nomad-profile" id="nomad">
+        <h1 class="destination-headline">The Nomad</h1>
+        <img src="./nomad.jpg" alt="Portrait of Elara Vance, the nomadic traveler" class="nomad-picture" loading="lazy">
+      </section>
+      <section class="travel-stats">
+        <div class="stat-box">
+          <div class="stat-number">15</div>
+          <div class="stat-label">Countries Explored</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Years Wandering</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">10</div>
+          <div class="stat-label">Diaries filled</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">103</div>
+          <div class="stat-label">Field Notes</div>
+        </div>
+      </section>
+      
+      <section class="story-section">
+        <h2>Why I traded my desk for a backpack</h2>
+          <p>It began with a half-empty suitcase and a one-way ticket to Morocco. At twenty-seven, after five years of editing manuscripts in a London publishing house, I realized I was reading more about adventures than having my own. So I traded my desk for a backpack, my daily commute for border crossings, and safety for serendipity.</p>
+  <p>What started as a sabbatical year became a lifestyle. That first journey taught me that the most profound stories aren't found in guidebooks but in railway carriages, at street food stalls, and during chance encounters with strangers who become temporary companions.</p>
+  <p>The most transformative journeys are not those that take you to new places, but those that deliver you to new versions of yourself.</p>
+  <p>In the early months, I kept a simple leather-bound journal—recording not just where I went, but how places felt. The scent of rain on hot pavement in Hanoi, the texture of ancient stone in Petra, the particular blue of twilight in the Andes. These "field notes" became the soul of what you now read here at Nomad Notes.</p>
+  <p>My philosophy remains unchanged: seek not the most photographed sights, but the most felt experiences. I'd rather spend an afternoon sketching in a local market than checking monuments off a list. I believe in trains over planes, street food over fine dining, and conversation over itinerary.</p>
+  <p>This space is free of sponsorships and advertisements. What you'll find here is unvarnished, unprompted, and utterly personal—just one wanderer's attempt to make sense of this beautiful, bewildering world through words and images.</p>
+        <span class="author-name">Elara Vance</span>
+          <div style="margin-top: 30px;">
+    <a href="#field-notes" class="call-to-action-btn" style="display: inline-block; margin-top: 20px; padding: 15px 30px; font-size: 1.2rem;">📬 Read latest field notes</a>
   </div>
-
+      </section>
+    </main>
+  </div>
 </body>
 </html>
