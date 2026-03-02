@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Montserrat";
-  src: url(./assets/fonts/Montserrat-Regular.ttf);
+  src: url(./fonts/Montserrat-Regular.ttf);
 }
 @font-face {
   font-family: "CrimsonPro";
-  src: url(./assets/fonts/CrimsonPro-Regular.ttf);
+  src: url(./fonts/CrimsonPro-Regular.ttf);
 }
 @font-face {
   font-family: "LaBelleAurore";
-  src: url(./assets/fonts/LaBelleAurore-Regular.ttf);
+  src: url(./fonts/LaBelleAurore-Regular.ttf);
 }
 .handlee-regular {
   font-family: "Handlee", cursive;
@@ -58,7 +58,7 @@
   position: relative;
   height: 100vh;
   background-color: var(--papel-antiguo);
-  background-image: url(./assets/images/landscape.jpg);
+  background-image: url(./images/landscape.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
