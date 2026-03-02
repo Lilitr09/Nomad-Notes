@@ -13,27 +13,48 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="./nomad-notes-logo.png">
   <!-- Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Patrick+Hand&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <!-- Main Page -->
   <div class="journal-container">
-    <!-- Sidebar -->
-    <aside class="sidebar header">
-      <div class="sidebar-content">
-        <img src="./nomad-notes-logo.png" class="logo" alt="Nomad-Notes logo">
-
-        <!-- Nav Menu -->
-        <nav class="nav-menu" id="nav-menu">
-          <li><a href="./index.html" class="current">Home</a></li>
-          <li><a href="#field-notes">Field Notes</a></li>
-          <li><a href="#nomad">The Nomad</a></li>
-        </nav>
-        <div class="sidebar-footer">
-          <p>Est. 2026</p>
-        </div>
-      </div>
-    </aside>
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Nomad Notes</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Field Notes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">The Nomad</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Vintage Journal</a></li>
+            <li><a class="dropdown-item" href="#">Travel Guide</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     
     <!-- Content -->
     <main class="content">
@@ -44,15 +65,16 @@
         <div class="hero-content">
           <h1>Every journey starts with a single note.</h1>
           <h2 class="highlight-headline">Vintage travel journal</h2>
-          <p class="headline-note">Handcrafted journals with aged paper, antique maps, and space for your memories. Start your own legacy today.</p>
-          <button class="call-to-action-btn" type="button">✨ Create your journal</button>
+          <p class="headline-note patrick-hand-regular">Handcrafted journals with aged paper, antique maps, and space for your memories. Start your own legacy today.</p>
+          <button class="call-to-action-btn" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21.5 5.134a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -7.5 -.266v-15.174a10 10 0 0 1 8.5 .708m-10.5 -.707l.001 15.174a8 8 0 0 0 -7.234 .117l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -13.068a1 1 0 0 1 .5 -.866a10 10 0 0 1 8.5 -.707" /></svg> Create your journal</button>
         </div>
         <img class="compass" src="./compass-icon.png" alt="" width="150" loading="lazy" alt="vintange compass">
       </section>
 
       <!-- Destinations section -->
-      <h1 class="destination-headline" id="field-notes">Field Notes: Top Destinations</h1>
-      <h2 class="headline-note">Places that left a mark on my map</h2>
+      <h1 class="destination-headline" id="field-notes">Recent Field Notes</h1>
+      <h2 class="headline-note">Handpicked adventures from my journal</h2>
       <section class="destination-grid">
         <div class="destination-card right">
           <figure>
@@ -82,11 +104,11 @@
       <!-- Travel Guide Form -->
       <section>
         <div class="travel-guide-form">
-          <h3>📖 Free Field Guide for Wanderers</h3>
+          <h3><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21.5 5.134a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -7.5 -.266v-15.174a10 10 0 0 1 8.5 .708m-10.5 -.707l.001 15.174a8 8 0 0 0 -7.234 .117l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -13.068a1 1 0 0 1 .5 -.866a10 10 0 0 1 8.5 -.707" /></svg> Free Field Guide for Wanderers</h3>
           <p>Get my personal tips: packing light, finding hidden gems, and keeping a vintage journal on the road.</p>
           <input type="text" placeholder="Your name" aria-label="Your name">
           <input type="email" placeholder="Your email" aria-label="Your email address">
-          <button class="call-to-action-btn" type="button">✨ Send me the guide</button>
+          <button class="call-to-action-btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" /></svg> Send me the guide</button>
         </div>
       </section>
 
@@ -124,10 +146,12 @@
   <p>This space is free of sponsorships and advertisements. What you'll find here is unvarnished, unprompted, and utterly personal—just one wanderer's attempt to make sense of this beautiful, bewildering world through words and images.</p>
         <span class="author-name">Elara Vance</span>
           <div style="margin-top: 30px;">
-    <a href="#field-notes" class="call-to-action-btn" style="display: inline-block; margin-top: 20px; padding: 15px 30px; font-size: 1.2rem;">📬 Read latest field notes</a>
+    <a href="#field-notes" class="call-to-action-btn" style="display: inline-block; margin-top: 20px; padding: 15px 30px; font-size: 1.2rem;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-library"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.333 2a3.667 3.667 0 0 1 3.667 3.667v8.666a3.667 3.667 0 0 1 -3.667 3.667h-8.666a3.667 3.667 0 0 1 -3.667 -3.667v-8.666a3.667 3.667 0 0 1 3.667 -3.667zm-4.333 10h-3a1 1 0 0 0 0 2h3a1 1 0 0 0 0 -2m3 -3h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m-1 -3h-5a1 1 0 0 0 0 2h5a1 1 0 0 0 0 -2" /><path d="M3.517 6.391a1 1 0 0 1 .99 1.738c-.313 .178 -.506 .51 -.507 .868v10c0 .548 .452 1 1 1h10c.284 0 .405 -.088 .626 -.486a1 1 0 0 1 1.748 .972c-.546 .98 -1.28 1.514 -2.374 1.514h-10c-1.652 0 -3 -1.348 -3 -3v-10.002a3 3 0 0 1 1.517 -2.605" /></svg> Read latest field notes</a>
   </div>
       </section>
     </main>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

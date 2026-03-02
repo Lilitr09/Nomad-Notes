@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Montserrat";
-  src: url(./Montserrat-Regular.ttf);
+  src: url(./fonts/Montserrat-Regular.ttf);
 }
 @font-face {
   font-family: "CrimsonPro";
@@ -9,6 +9,16 @@
 @font-face {
   font-family: "LaBelleAurore";
   src: url(./LaBelleAurore-Regular.ttf);
+}
+.handlee-regular {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.patrick-hand-regular {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 :root {
@@ -28,88 +38,35 @@
 
 .journal-container {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: var(--papel-antiguo);
-}
-.sidebar {
-  width: 300px;
-  background-color: var(--crema-oscuro);
-  border-right: 2px solid rgba(0, 0, 0, 0.1);
-  position: fixed;
-  height: 100vh;
-  padding: 40px 20px;
-  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.05);
-  z-index: 10;
-  overflow: hidden;
-}
-
-.content {
-  margin-left: 300px;
-  flex: 1;
 }
 
 .logo {
   width: 100%;
-  max-width: 250px;
+  max-width: 100px; /* Ajusta según tu logo */
   height: auto;
-  aspect-ratio: 1/1;
-  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.05);
   border-radius: 50%;
+  margin-bottom: 30px;
+  align-self: center;
 }
-.nav-menu {
-  margin-top: 20px;
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-  gap: 20px;
-  transition: all 0.3s ease;
+.navbar {
+  border-bottom: 1px solid var(--ocre-quemado);
+  font-family: "Montserrat";
 }
-.nav-menu li {
-  margin-left: 30px;
+.dropdown-menu {
+  background: linear-gradient(var(--crema-oscuro), var(--papel-antiguo));
 }
-.nav-menu a {
-  text-decoration: none;
-  color: var(--azul-pizzara);
-  font-family: "Montserrat", sans-serif ;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 20px 0;
-  transition: all 0.3s ease;
-  position: relative;
-  padding: 8px 12px;
-}
-.nav-menu a:hover {
-  color: var(--ocre-quemado);
-  padding-left: 10px;
+.dropdown-item:hover {
+  background-color: var(--papel-antiguo-transparente);
 }
 
-.nav-menu a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: var(--ocre-quemado);
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-}
-        
-.nav-menu a:hover::after {
-  width: 80%;
-}
-
-.sidebar-footer p {
-  position: absolute;
-  bottom: 0;
-  color: var(--negro-carbon);
-  font-family: "Montserrat", sans-serif ;
-}
 .hero-section {
   position: relative;
   height: 100vh;
   background-color: var(--papel-antiguo);
-  background-image: url(./landscape.jpg);
+  background-image: url(./images/landscape.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -180,38 +137,7 @@ input[type="email"]:focus, input[type="text"]:focus {
   outline: 2px solid var(--ocre-quemado);
   box-shadow: 0 0 5px var(--ocre-quemado);
 }
-/* Ver como cambiar el color de las esquinas */
-.corner-top-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  filter: brightness(0) invert(17%);
-}
-.corner-top-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transform: rotate(270deg);
-  filter: brightness(0) invert(17%);
-}
-.corner-bottom-left {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  transform: rotate(180deg);
-  filter: brightness(0) invert(17%);
-}
-.corner-bottom-right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  transform: rotate(90deg);
-  filter: brightness(0) invert(17%);
-}
+
 .compass {
   position: absolute;
   z-index: 1;
@@ -391,11 +317,6 @@ figcaption, .date {
     gap: 50px;
 
   }
-  .corner-top-right, .corner-top-left, .corner-bottom-right, .corner-bottom-left {
-    width: 140px;
-    height: 140px;
-    transition: 1s ease;
-  }
   .call-to-action-btn {
     width: 50%;
     font-size: 1.1rem;
@@ -408,44 +329,60 @@ figcaption, .date {
   }
 }
 @media screen and (max-width: 768px) {
-  .hamburger {
-    display: flex;
+  .nav-menu.collapse:not(.show) {
+    display: none;
   }
-  .nav-menu {
+  .nav-menu.collapse.show {
+    display: block;
     position: absolute;
-    top: 100%;
+    top: 90px; /* altura del sidebar en móvil */
     left: 0;
     width: 100%;
     background-color: var(--crema-oscuro);
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1050; /* por encima de otros elementos */
+  }
+
+  .nav-menu ul {
     flex-direction: column;
     align-items: center;
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-  .nav-menu.active {
-    max-height: 500px;
-    padding: 20px 0;
-}
+    gap: 15px;
+  }
+
   .nav-menu a {
     display: block;
-    padding: 15px;
-    width: 100%;
-}
-  /* Animación del botón hamburguesa a X */
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-}
+    padding: 10px;
+    text-align: center;
   }
+
+  /* Ocultamos el botón de Bootstrap en escritorio, pero en móvil sí se ve
+  .navbar-toggler {
+    display: block; /* o inline-block según tu diseño */
+    /* position: absolute;
+    top: 20px;
+    right: 20px;
+  } */ 
+}
+@media screen and (max-width: 1117px) {
+  .sidebar {
+    height: 90px;
+    /* ... resto de estilos ... */
+  }
+
+  .sidebar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* para separar logo y botón */
+    width: 100%;
+    padding: 0 20px;
+  }
+
+.navbar-toggler {
+  order: 3; /* para que quede a la derecha */
+  }
+}
+
+
 
 
