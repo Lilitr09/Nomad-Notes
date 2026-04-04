@@ -1,157 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <!-- Metatags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nomad Notes - A travel blog documenting journeys and personal stories">
-  <meta name="keywords" content="travel, blog, nomad, adventure, field notes">
-  <meta property="og:title" content="Nomad Notes">
-  <meta property="og:type" content="website">
-  <!-- Title -->
-  <title>Nomad Notes | Travel Blog</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./assets/logo/nomad-notes-logo.png">
-  <!-- Styles -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Nomad Notes • Bitácora de viajes</title>
+  <link rel="icon" type="image/png" href="./img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Patrick+Hand&display=swap" rel="stylesheet">
-  
 </head>
 <body>
-  <!-- Main Page -->
-  <div class="journal-container">
-    <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Nomad Notes</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Field Notes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">The Nomad</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Products
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Vintage Journal</a></li>
-            <li><a class="dropdown-item" href="#">Travel Guide</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="./img/logo.png" alt="" class="d-inline-block align-text-top logo">
+        Nomad Notes
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#field-notes">Field Notes</a>
+          <a class="nav-link" href="#shop">Products</a>
+          <a class="nav-link" href="#the-nomad">The Nomad</a>
+          <a class="nav-link" href="#free-guide">Free guide</a>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
-    
-    <!-- Content -->
-    <main class="content">
+  </nav>
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <h1>Slogan</h1>
+        <p>Relatos de la carretera, apuntes de un alma errante</p>
+        <a href="#field-notes" class="btn">Leer Field Notes</a>
+      </div>
+    </section>
 
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <h1>Every journey starts with a single note.</h1>
-          <h2 class="highlight-headline">Vintage travel journal</h2>
-          <p class="headline-note patrick-hand-regular">Handcrafted journals with aged paper, antique maps, and space for your memories. Start your own legacy today.</p>
-          <button class="call-to-action-btn" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21.5 5.134a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -7.5 -.266v-15.174a10 10 0 0 1 8.5 .708m-10.5 -.707l.001 15.174a8 8 0 0 0 -7.234 .117l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -13.068a1 1 0 0 1 .5 -.866a10 10 0 0 1 8.5 -.707" /></svg> Create your journal</button>
-        </div>
-        <img class="compass" src="./assets/images/compass-icon.png" width="150" loading="lazy" alt="vintange compass">
-      </section>
+    <section class="field-notes" id="field-notes">
+      <div class="container">
+        <h2>Field Notes</h2>
+          <div class="notes-grid">
+          <!-- Cada nota será una tarjeta -->
+            <article class="note-card">
+              <div class="note-img">
+                <img src="./assets/images/andes-argentinos.jpg" alt="Atardecer en los Andes">
+              </div>
+              <div class="note-content">
+                <span class="note-date">15 Marzo, 2026</span>
+                  <h3>El silencio de los Andes</h3>
+                  <p>Entre montañas y nubes, descubrí que el mejor mapa es perderse sin prisa...</p>
+                  <a href="#" class="read-more">Leer más →</a>
+              </div>
+            </article>
+            <!-- Repite para más notas -->
+            <article class="note-card">
+              <div class="note-img">
+                <img src="./assets/images/paris.jpg" alt="Atardecer en los Andes">
+              </div>
+              <div class="note-content">
+                <span class="note-date">20 Abril, 2025</span>
+                  <h3>Paris</h3>
+                  <p>Entre montañas y nubes, descubrí que el mejor mapa es perderse sin prisa...</p>
+                  <a href="#" class="read-more">Leer más →</a>
+              </div>
+            </article>
+            <article class="note-card">
+              <div class="note-img">
+                <img src="./assets/images/malasia.jpg" alt="Atardecer en los Andes">
+              </div>
+              <div class="note-content">
+                <span class="note-date">15 Marzo, 2026</span>
+                  <h3>Malasia</h3>
+                  <p>Entre montañas y nubes, descubrí que el mejor mapa es perderse sin prisa...</p>
+                  <a href="#" class="read-more">Leer más →</a>
+              </div>
+            </article>
+          </div>
+      </div>
+    </section>
+    <section id="the-nomad" class="the-nomad">
+            <div class="container nomad-wrapper">
+                <div class="nomad-img">
+                    <img src="./assets/images/nomad.jpg" alt="El nómada">
+                </div>
+                <div class="nomad-bio">
+                    <h2>The Nomad</h2>
+                    <p>Soy [tu nombre], un alma inquieta que convirtió la carretera en su hogar. Este diario nació entre cuadernos manchados de café y mapas rotos, con la idea de compartir no solo destinos, sino la esencia de viajar sin prisas...</p>
+                    <p class="signature">— Tu Nomad</p>
+                </div>
+            </div>
+        </section>
 
-      <!-- Destinations section -->
-      <h2 class="destination-headline" id="field-notes">Recent Field Notes</h2>
-      <h3 class="headline-note">Handpicked adventures from my journal</h3>
-      <section class="destination-grid">
-        <div class="destination-card right">
-          <figure>
-            <img class="destination-img" src="./assets/images/paris.jpg" alt="" loading="lazy">
-            <figcaption>Lost in the lavender fields of Provence, I found a piece of myself.</figcaption>
-          </figure>
-          <p class="date"><time datetime="2021-07-12">12 July 2021 — Provence, France</time></p>
-        </div>
+        <section id="free-guide" class="free-guide">
+            <div class="container guide-content">
+                <h2>Guía gratuita de viajes</h2>
+                <p>Descarga nuestra <strong>Guía Esencial del Nómada</strong> con listas de empaque, rutas secretas y consejos para viajar ligero.</p>
+                <form action="#" method="post" class="guide-form">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn">Enviar y descargar</button>
+                </form>
+            </div>
+        </section>
 
-        <div class="destination-card">
-          <figure>
-            <img class="destination-img" src="./assets/images/malasia.jpg" alt="" loading="lazy">
-            <figcaption>The floating markets of Bangkok taught me the art of slow travel.</figcaption>
-          </figure>
-          <p class="date"><time datetime="2019-04-12">12 April 2019 — Bangkok, Thailand</time></p>
-        </div>
-
-        <div class="destination-card">
-          <figure>
-            <img class="destination-img" src="./assets/images/paris.jpg" alt="" loading="lazy">
-            <figcaption>Under the stars of the Sahara, I realized home is wherever I lay my hat.</figcaption>
-          </figure>
-          <p class="date"><time datetime="2000-09-14">14 September 2000 — Sahara Desert, Morocco</time></p>
-        </div>
-      </section>
-
-      <!-- Travel Guide Form -->
-      <section>
-        <div class="travel-guide-form">
-          <h3><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21.5 5.134a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -7.5 -.266v-15.174a10 10 0 0 1 8.5 .708m-10.5 -.707l.001 15.174a8 8 0 0 0 -7.234 .117l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -13.068a1 1 0 0 1 .5 -.866a10 10 0 0 1 8.5 -.707" /></svg> Free Field Guide for Wanderers</h3>
-          <p>Get my personal tips: packing light, finding hidden gems, and keeping a vintage journal on the road.</p>
-          <input type="text" placeholder="Your name" aria-label="Your name">
-          <input type="email" placeholder="Your email" aria-label="Your email address">
-          <button class="call-to-action-btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" /></svg> Send me the guide</button>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section class="nomad-profile" id="nomad">
-        <h2 class="destination-headline">The Nomad</h2>
-        <img src="./assets/images/nomad.jpg" alt="Portrait of Elara Vance, the nomadic traveler" class="nomad-picture" loading="lazy">
-      </section>
-      <section class="travel-stats">
-        <div class="stat-box">
-          <div class="stat-number">15</div>
-          <div class="stat-label">Countries Explored</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number">5</div>
-          <div class="stat-label">Years Wandering</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number">10</div>
-          <div class="stat-label">Diaries filled</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number">103</div>
-          <div class="stat-label">Field Notes</div>
-        </div>
-      </section>
-      
-      <section class="story-section">
-        <h2>Why I traded my desk for a backpack</h2>
-          <p>It began with a half-empty suitcase and a one-way ticket to Morocco. At twenty-seven, after five years of editing manuscripts in a London publishing house, I realized I was reading more about adventures than having my own. So I traded my desk for a backpack, my daily commute for border crossings, and safety for serendipity.</p>
-  <p>What started as a sabbatical year became a lifestyle. That first journey taught me that the most profound stories aren't found in guidebooks but in railway carriages, at street food stalls, and during chance encounters with strangers who become temporary companions.</p>
-  <p>The most transformative journeys are not those that take you to new places, but those that deliver you to new versions of yourself.</p>
-  <p>In the early months, I kept a simple leather-bound journal—recording not just where I went, but how places felt. The scent of rain on hot pavement in Hanoi, the texture of ancient stone in Petra, the particular blue of twilight in the Andes. These "field notes" became the soul of what you now read here at Nomad Notes.</p>
-  <p>My philosophy remains unchanged: seek not the most photographed sights, but the most felt experiences. I'd rather spend an afternoon sketching in a local market than checking monuments off a list. I believe in trains over planes, street food over fine dining, and conversation over itinerary.</p>
-  <p>This space is free of sponsorships and advertisements. What you'll find here is unvarnished, unprompted, and utterly personal—just one wanderer's attempt to make sense of this beautiful, bewildering world through words and images.</p>
-        <span class="author-name">Elara Vance</span>
-          <div style="margin-top: 30px;">
-    <a href="#field-notes" class="call-to-action-btn" style="display: inline-block; margin-top: 20px; padding: 15px 30px; font-size: 1.2rem;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-library"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.333 2a3.667 3.667 0 0 1 3.667 3.667v8.666a3.667 3.667 0 0 1 -3.667 3.667h-8.666a3.667 3.667 0 0 1 -3.667 -3.667v-8.666a3.667 3.667 0 0 1 3.667 -3.667zm-4.333 10h-3a1 1 0 0 0 0 2h3a1 1 0 0 0 0 -2m3 -3h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m-1 -3h-5a1 1 0 0 0 0 2h5a1 1 0 0 0 0 -2" /><path d="M3.517 6.391a1 1 0 0 1 .99 1.738c-.313 .178 -.506 .51 -.507 .868v10c0 .548 .452 1 1 1h10c.284 0 .405 -.088 .626 -.486a1 1 0 0 1 1.748 .972c-.546 .98 -1.28 1.514 -2.374 1.514h-10c-1.652 0 -3 -1.348 -3 -3v-10.002a3 3 0 0 1 1.517 -2.605" /></svg> Read latest field notes</a>
-  </div>
-      </section>
+        <section id="shop" class="shop">
+            <div class="container shop-inner">
+                <h2>La tienda del nómada</h2>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/producto.jpg" alt="Field Kit imprimible">
+                    </div>
+                    <div class="product-info">
+                        <h3>Field Kit · Cuaderno de viaje imprimible</h3>
+                        <p>Un PDF con plantillas de itinerarios, páginas de diario, mapas en blanco y pegatinas vintage. Imprime y crea tu propia bitácora.</p>
+                        <div class="price">$12.90 USD</div>
+                        <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Nomad Notes · Cuaderno de bitácora</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+    </footer>
+    
+
+  </main>
+  
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
